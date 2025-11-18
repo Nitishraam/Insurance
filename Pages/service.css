@@ -136,7 +136,7 @@ nav {
   background: linear-gradient(to right, rgb(227, 195, 33), rgb(119, 100, 7));
   color: black;
 }
-top-about {
+.top-about {
   width: 100%;
   position: relative;
   padding-top: 80px;
@@ -182,13 +182,14 @@ top-about {
   margin: auto;
   padding: 50px 20px;
   text-align: center;
+  margin-top: 50px;
 }
 
 /* TITLE */
 .main-title {
   font-size: 36px;
   font-weight: 800;
-  color: #073b78;
+  color: darkblue;
   letter-spacing: 1px;
   line-height: 1.2;
 }
@@ -308,8 +309,8 @@ top-about {
   align-items: center;
   gap: 10px;
   padding: 16px 28px;
-  background: #0057d8;
-  color: #fff;
+   background: linear-gradient(to right, #7bb6f9, #023a7a);
+  color: black;
   font-weight: 700;
   text-decoration: none;
   border-radius: 10px;
@@ -318,7 +319,8 @@ top-about {
 }
 
 .promo-btn:hover {
-  background: #0047b8;
+  background: white;
+  color: blue;
 }
 
 .promo-btn .icon {
@@ -340,6 +342,7 @@ top-about {
   max-width: 1180px;
   margin: 0 auto;
   padding: 56px 20px;
+  margin-top: 50px;
 }
 
 /* Header */
@@ -352,7 +355,7 @@ top-about {
 }
 .types-title {
   font-size: 36px;
-  color: #08366f;
+  color: darkblue;
   font-weight: 800;
   flex: 0 0 420px;
   line-height: 1.02;
@@ -371,8 +374,8 @@ top-about {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 0; /* we use borders, not gaps */
-  border-top: 1px solid rgba(8, 54, 111, 0.06);
-  border-left: 1px solid rgba(8, 54, 111, 0.06);
+  border: 2px solid rgba(0, 0, 0, 0.06);
+  /* border-left: 1px solid rgba(8, 54, 111, 0.06); */
 }
 
 /* Card */
@@ -381,10 +384,14 @@ top-about {
   gap: 22px;
   padding: 30px 28px;
   align-items: flex-start;
-  border-right: 1px solid rgba(8, 54, 111, 0.06);
-  border-bottom: 1px solid rgba(8, 54, 111, 0.06);
+  border: 1px solid rgba(13, 13, 14, 0.06);
+  /* border-bottom: 1px solid rgba(8, 54, 111, 0.06); */
   min-height: 120px;
   background: transparent;
+}
+.type-card:hover{
+    background: linear-gradient(to right, #7bb6f9, #8f97a1);
+    color: white;
 }
 
 /* left icon block */
