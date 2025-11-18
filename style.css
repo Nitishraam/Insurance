@@ -18,10 +18,10 @@ nav {
 }
 .mb {
   display: none;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 12;
-  text-transform: uppercase;
+  text-transform: uppercase;;
 }
 .mb-main {
   width: 100%;
@@ -1231,9 +1231,7 @@ swiper-slide img {
   }
 }
 @media (max-width: 520px) {
-  body {
-    padding: 18px;
-  }
+ 
   .blog-title {
     font-size: 26px;
   }

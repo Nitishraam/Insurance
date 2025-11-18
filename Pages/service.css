@@ -49,12 +49,12 @@ nav {
 .login2 {
   border: 1px solid black;
   padding: 7px;
-  color: rgb(208, 176, 13);
+  color: #005fc9;
   border-radius: 5px;
 }
 
 .login2:hover {
-  background: linear-gradient(to right, rgb(227, 195, 33), rgb(119, 100, 7));
+  background: linear-gradient(to right, #7bb6f9, #023a7a);
   color: black;
 }
 .menu-list li a {
@@ -128,13 +128,13 @@ nav {
 .login {
   border: 1px solid black;
   padding: 7px;
-  color: rgb(208, 176, 13);
+  color: #005fc9;
   border-radius: 5px;
 }
 
 .login:hover {
-  background: linear-gradient(to right, rgb(227, 195, 33), rgb(119, 100, 7));
-  color: black;
+  background: linear-gradient(to right, #7bb6f9, #023a7a);
+  color: white;
 }
 .top-about {
   width: 100%;
