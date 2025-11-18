@@ -461,7 +461,7 @@ nav {
 /* QUOTE BUTTON */
 .quote-btn {
   padding: 16px 34px;
-  background: #0066ff;
+  background: linear-gradient(to right, #7bb6f9, #023a7a);
   color: #fff;
   border-radius: 12px;
   text-decoration: none;
@@ -471,7 +471,8 @@ nav {
 }
 
 .quote-btn:hover {
-  background: #0052d6;
+  background: white;
+  color: blue;
 }
 
 /* RESPONSIVE */
@@ -657,6 +658,7 @@ nav {
   width: 100%;
   border: 1px solid black;
   margin-top: 60px;
+    background: linear-gradient(to right, #7bb6f9, #023a7a);
 }
 .stats-wrap {
   max-width: 1150px;
@@ -705,7 +707,7 @@ nav {
 /* label */
 .stat-label {
   font-size: 16px;
-  color: rgb(24, 24, 104);
+  color: rgb(4 4 62);
   margin-top: 6px;
   opacity: 0.95;
 }
