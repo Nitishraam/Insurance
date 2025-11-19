@@ -311,9 +311,9 @@ top-about {
 /* responsiveness */
 @media (max-width:980px){
   .dashboard{grid-template-columns:1fr; padding:8px}
-  .charts-row{flex-direction:column}
+  .charts-row{flex-direction:column;width: 90%;margin: auto;}
   .donut-card{flex:1}
-  .heat-table{grid-template-columns:120px repeat(2,1fr)}
+  .heat-table{grid-template-columns:60px repeat(4,1fr);padding: 10px;}
 }
 
 

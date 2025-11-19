@@ -252,7 +252,7 @@ swiper-slide img {
   /* make hero flow vertically on small screens */
   .hero {
     flex-direction: column;
-    padding: 30px 20px;
+    /* padding: 30px; */
     height: auto; /* let it size naturally */
     margin-top: 60px; /* smaller top spacing */
   }
@@ -1505,6 +1505,14 @@ swiper-slide img {
   .logo {
     height: 32px;
   }
+  .main-photo{
+    height: 390px;
+  }
+ .blog-wrap{
+  max-width: 700px;
+ }
+
+  
 }
 
 /* RESPONSIVE */
@@ -1597,9 +1605,10 @@ swiper-slide img {
   @media (max-width: 768px) {
     .hero {
       flex-direction: column;
-      padding: 30px 20px;
+      /* padding: 30px; */
       height: auto;
       margin-top: 60px;
+      padding-bottom: 20px;
     }
 
     .hero-content {
