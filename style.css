@@ -365,11 +365,11 @@ swiper-slide img {
 }
 
 .tag {
-  background: #0c3c55;
+  background: lightblue;
   display: inline-block;
-  color: white;
+  color: darkblue;
   padding: 6px 20px;
-  font-size: 13px;
+  font-size: 16px;
   border-radius: 3px;
 }
 
@@ -568,12 +568,12 @@ swiper-slide img {
 /* RIGHT column */
 .small-tag {
   display: inline-block;
-  background: #f3f6f8;
-  color: #0d263b;
+  background: lightblue;
+  color: darkblue;
   padding: 6px 12px;
   border-radius: 6px;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 16px;
   margin-bottom: 14px;
 }
 .headline {

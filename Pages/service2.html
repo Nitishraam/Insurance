@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly</title>
+    <link rel="stylesheet" href="./service2.css">
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.birds.min.js"
+      integrity="sha512-iIWwQewCNqw+4f09oyZvCkBUNEuVfCSOtFzQW6dzvsm46yuToWTcL9uUEAyTnV0fG90jyCiiURE4yEgLclpoZA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+</head>
+<body>
+     <div class="mb">
+      <div class="mb-main">
+        <div class="menu-btn">
+          <svg
+            onclick="menu.hidden^=1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="size-6"
+            height="24"
+            width="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <div hidden id="menu">
+            <ul class="menu-list">
+              <li>
+                <a  href="./home2.html">Home</a>
+                <i onclick="menu2.hidden^=1" class="fa-solid fa-caret-down"></i>
+                <div id="menu2" hidden>
+                  <a href="../index.html">Home1</a>
+                </div>
+              </li>
+              <li><a href="./about2.html">About</a></li>
+              <li><a  style="color: #005FC9" href="./service2.html">Service</a></li>
+              <li><a href="./blog2.html">Blogs</a></li>
+               <li><a href="./contact2.html">Contact</a></li>
+            <li><a href="./dashboard2.html">Dashboard</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mb-logo">
+          <a href="./home2.html" style="display: flex; align-items: center">
+            <img src="../images/logo.webp" alt="" />
+          </a>
+          <a class="login2" href="./login2.html"
+            ><i class="fa-solid fa-user"></i>Log in</a
+          >
+        </div>
+      </div>
+    </div>
+    <nav id="nav" >
+      <div class="main-menu">
+        <a href="./home2.html" style="display: flex; align-items: center">
+          <img src="../images/logo.webp" alt="" />
+        </a>
+        <div class="menu-child">
+          <ul class="menu-list2">
+            <div style="position: relative">
+              <li>
+                <a  href="./home2.html">Home</a
+                ><i
+                  onclick="menu3.hidden^=1"
+                  class="fa-solid fa-caret-down"
+                ></i>
+                <div
+                  style="position: absolute; top: 25px; background-color: white"
+                >
+                  <a
+                    href="../index.html"
+                    style="
+                      background-color: white;
+                      border: 1px solid black;
+                      padding: 4px;
+                    "
+                    id="menu3"
+                    hidden
+                    >Home1</a
+                  >
+                </div>
+              </li>
+            </div>
+            <li><a href="./about2.html">About</a></li>
+            <li><a style="color: #005FC9" href="./service2.html">Service</a></li>
+            <li><a href="./blog2.html">Blogs</a></li>
+            <li><a href="./contact2.html">Contact</a></li>
+            <li><a href="./dashboard2.html">Dashboard</a></li>
+          </ul>
+
+          <a class="login" href="./login2.html"
+            ><i class="fa-solid fa-user"></i>Log in</a
+          >
+        </div>
+      </div>
+    </nav>
+
+      <div class="top-about">
+      <img
+        class="top-img"
+        src="../images/tb1.webp"
+        alt=""
+      />
+
+      <div data-aos="zoom-in" class="overlay">
+        <h1>SERVICE</h1>
+        <p class="breadcrumb">
+          <span class="home-icon">🏠Home / <span>Service</span></span>
+        </p>
+      </div>
+    </div>
+
+  <section class="services-section">
+    <div class="container">
+      <div class="header-wrap">
+        <!-- <div class="kicker">Services</div> -->
+        <h2 data-aos="fade-up" class="title">We’re Covering All the<br/>Insurance Services Files</h2>
+          <!-- <div class="divider"></div> -->
+       
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="card-media">
+            <img data-aos="zoom-in" src="../images/car.webp" alt="Car Insurance">
+          </div>
+          <div data-aos="fade-up" class="card-body">
+            <div class="icon-title">
+              <div class="icon">
+                <!-- simple SVG icon -->
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"><path d="M3 12h18"/><path d="M5 12v6h2v-6"/><path d="M17 12v6h2v-6"/></svg>
+              </div>
+              <h3>Car Insurance</h3>
+            </div>
+            <p class="desc">There are many variations the off passages of Lorem Ipsum free thing avagtilable, but majority</p>
+          </div>
+          <div class="card-corner"></div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img data-aos="zoom-in" src="../images/life.webp" alt="Life Insurance">
+          </div>
+          <div data-aos="fade-up" class="card-body">
+            <div class="icon-title">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"><path d="M3 7h18"/><path d="M12 7v10"/></svg>
+              </div>
+              <h3>Life Insurance</h3>
+            </div>
+            <p class="desc">There are many variations the off passages of Lorem Ipsum free thing avagtilable, but majority</p>
+          </div>
+          <div class="card-corner"></div>
+        </article>
+
+        <article class="card">
+          <div class="card-media">
+            <img data-aos="zoom-in" src="../images/bss.webp" alt="Business Insurance">
+          </div>
+          <div data-aos="fade-up" class="card-body">
+            <div class="icon-title">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor"><path d="M12 2v6"/><path d="M5 22v-7h14v7"/></svg>
+              </div>
+              <h3>Business Insurance</h3>
+            </div>
+            <p class="desc">There are many variations the off passages of Lorem Ipsum free thing avagtilable, but majority</p>
+          </div>
+          <div class="card-corner"></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-section">
+    <div class="left">
+      <!-- <span class="kicker"><span class="kicker-icon">❓</span> WHY DO I NEED</span> -->
+      <h2 data-aos="fade-up" class="big-heading">Focus On Your<br/>Employees Health</h2>
+
+      <div class="illustration">
+        <!-- Using the developer-provided image path — replace if needed -->
+        <img data-aos="zoom-in" src="../images/s2.webp" alt="illustration">
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="right-inner">
+        <h3 data-aos="fade-up" class="right-title">Advice You Can Count On</h3>
+        <p data-aos="fade-up" class="right-desc">
+          A medical insurance plan is extremely important since it provides full coverage against ever-increasing healthcare expenses.
+        </p>
+
+        <ul  data-aos="fade-up" class="features">
+          <li class="feature">
+            <div class="feat-icon"><i class="fa-solid fa-book-medical"></i></div>
+            <div class="feat-label">Beat Medical Inflation</div>
+          </li>
+
+          <li class="feature">
+            <div class="feat-icon"><i class="fa-solid fa-file-medical"></i></div>
+            <div class="feat-label">Best Quality Healthcare</div>
+          </li>
+
+          <li class="feature">
+            <div class="feat-icon"><i class="fa-solid fa-universal-access"></i></div>
+            <div class="feat-label">Get Access To Specialised</div>
+          </li>
+
+          <li class="feature">
+            <div class="feat-icon"><i class="fa-solid fa-hospital"></i></div>
+            <div class="feat-label">Avail Cashless Hospitalization</div>
+          </li>
+
+          <li class="feature">
+            <div class="feat-icon"><i class="fa-solid fa-cash-register"></i></div>
+            <div class="feat-label">30% Save Tax</div>
+          </li>
+
+          <li class="feature">
+            <div class="feat-icon"><i class="fa-solid fa-check"></i></div>
+            <div class="feat-label">Preventive Health<br/>Check-Up Coupons</div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>  
+  
+
+
+
+
+
+    <main class="wrap">
+        
+        <!-- LEFT CONTENT -->
+        <section  data-aos="zoom-in" class="left">
+           
+
+            <h1  data-aos="fade-up" class="title2">Got Questions?<br>We've Got Answers</h1>
+
+            <img src="Screenshot 2025-11-20 112837.png" class="illustration" alt="">
+        </section>
+
+        <!-- RIGHT FAQ LIST -->
+        <aside  data-aos="fade-up" class="right">
+            <div class="faq-card">
+
+                <div data-aos="fade-up" class="faq-item">
+                    <div class="question-row">
+                        <div class="q-text">How exactly does Instive help me?</div>
+                        <button class="toggle-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6" stroke="#0f3040" stroke-width="1.6" fill="none"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        Instive connects you with service partners and offers fast insurance support.
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" class="faq-item">
+                    <div class="question-row">
+                        <div class="q-text">Does Instive help employees with claims?</div>
+                        <button class="toggle-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6" stroke="#0f3040" stroke-width="1.6" fill="none"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        Yes — we guide employees and help them complete claims easily.
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" class="faq-item">
+                    <div class="question-row">
+                        <div class="q-text">Do you have a mobile app?</div>
+                        <button class="toggle-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6" stroke="#0f3040" stroke-width="1.6" fill="none"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        Yes, available on iOS and Android.
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" class="faq-item">
+                    <div class="question-row">
+                        <div class="q-text">Is there a discount code?</div>
+                        <button class="toggle-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6" stroke="#0f3040" stroke-width="1.6" fill="none"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        Yes — join our newsletter to get discount codes.
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" class="faq-item">
+                    <div class="question-row">
+                        <div class="q-text">Do you support banking loans?</div>
+                        <button class="toggle-btn">
+                            <svg width="16" height="16" viewBox="0 0 24 24">
+                                <path d="M6 9l6 6 6-6" stroke="#0f3040" stroke-width="1.6" fill="none"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="answer">
+                        Yes, we work with banks to offer loan support.
+                    </div>
+                </div>
+
+            </div>
+        </aside>
+    </main>
+
+<script>
+    const buttons = document.querySelectorAll(".toggle-btn");
+
+    buttons.forEach(btn => {
+        btn.addEventListener("click", () => {
+            const answer = btn.parentElement.nextElementSibling;
+
+            // close others
+            document.querySelectorAll(".answer").forEach(a => {
+                if (a !== answer) a.classList.remove("open");
+            });
+
+            document.querySelectorAll(".toggle-btn").forEach(b => {
+                if (b !== btn) b.classList.remove("active");
+            });
+
+            // toggle current
+            answer.classList.toggle("open");
+            btn.classList.toggle("active");
+        });
+    });
+</script>
+
+
+<section class="section-box">
+
+    <!-- LEFT CONTENT -->
+    <div class="content-left">
+
+        <div data-aos="fade-up" class="top-tag">
+            <img data-aos="zoom-in" src="../images/s1.webp" width="16">
+            BEST OFFER
+        </div>
+
+        <h1 data-aos="fade-up" class="title-main">
+            Protect What You Love<br>And Save Up To 30%
+        </h1>
+
+        <p data-aos="fade-up" class="text-info">
+            Your teams want health insurance that comes with no surprises, 
+            no hidden costs & no out-of-pocket expenses. Give them access to great care with Instive.
+        </p>
+
+        <a data-aos="fade-up" href="./contact2.html" class="action-btn">Get a Quote →</a>
+
+    </div>
+
+    <!-- RIGHT IMAGE -->
+    <div data-aos="zoom-in" class="content-right">
+        <img src="../images/s1.webp" alt="Insurance Illustration">
+    </div>
+
+</section>
+
+
+   <footer class="ft-wrap" role="contentinfo">
+    <div class="ft-inner">
+
+      <!-- About / Subscribe -->
+      <div class="ft-col ft-about">
+        <h3 class="ft-title">About</h3>
+        <p class="ft-text">
+          Insurance is purchased to provide financial protection or reimbursement against losses resulting from accidents, injury, or property damage.
+        </p>
+
+        <form class="ft-subscribe" action="./Pages/error.html" method="GET" aria-label="Subscribe form">
+          <label class="sr-only" for="ft-email">Email Address</label>
+          <input id="ft-email" class="ft-input" name="email" type="email" placeholder="Email Address" required>
+          <button class="ft-send" type="submit" aria-label="Subscribe">➜</button>
+        </form>
+
+        <div class="ft-social">
+          <a href="./error.html" class="s"> <i class="fa-brands fa-instagram"></i></a>
+          <a href="./error.html" class="s"> <i class="fa-brands fa-facebook"></i></a>
+          <a href="./error.html" class="s"> <i class="fa-brands fa-twitter"></i></a>
+          <a href="./error.html" class="s"> <i class="fa-brands fa-telegram"></i></a>
+        </div>
+      </div>
+
+      <!-- Middle contact card -->
+      <div class="ft-col ft-contact">
+        <div class="contact-card">
+         
+
+          <div class="contact-items">
+            <div class="ci">
+              <span class="ci-icon">🌐</span>
+              <div class="ci-text">
+                <div class="ci-line">stackly@gmail.com</div>
+                <div class="ci-sub">www.stackly.com</div>
+              </div>
+            </div>
+
+            <div class="ci">
+              <span class="ci-icon">📍</span>
+              <div class="ci-text">
+                <div class="ci-line">Chinna Thirupathi,Salem</div>
+                <div class="ci-sub">Tamilnadu,India.</div>
+              </div>
+            </div>
+
+            <hr class="ci-divider">
+
+            <div class="ci phone">
+              <span class="ci-icon circle">📞</span>
+              <div class="ci-text">
+                <div class="ci-label">Emergency call</div>
+                <div class="ci-phone">+91 78912 24567</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right column: Explore links + Map (replaced gallery) -->
+      <div class="ft-col ft-right">
+        <h3 class="ft-title">Quick Links</h3>
+        <ul class="ft-links">
+          <li><a href="./home2.html">Home</a></li>
+          <li><a href="./about2.html">About</a></li>
+          <li><a href="./service2.html">Service</a></li>
+          <li><a href="./blog2.html">Blog</a></li>
+          <li><a href="./contact2.html">Contact</a></li>
+          <li><a href="./dashboard2.html">Dashboard</a></li>
+        </ul>
+
+        
+      </div>
+    
+
+    </div>
+      <div class="ft-map" aria-hidden="false">
+          <!-- Replace the src with the map/location you want.
+               This is an embeddable Google Maps example for New York.
+               If you prefer another provider, replace the iframe accordingly. -->
+           <iframe class="map1"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
+              width="100%"
+              height="150"
+              style="border: 0,"
+              allowfullscreen=""
+              loading="lazy"
+              
+            >
+            </iframe>
+        </div>
+
+    <!-- COPYRIGHT ROW -->
+    <div class="ft-copy">
+      © 2025 All rights reserved.
+    </div>
+  </footer>
+
+
+
+
+
+   <script>
+      // $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+        once: false,
+        mirror: true,
+      });
+    </script>
+    
+</body>
+</html>

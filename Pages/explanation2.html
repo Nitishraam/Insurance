@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stackly</title>
+    <link rel="stylesheet" href="./explanation2.css">
+</head>
+<body>
+        <div class="mb">
+      <div class="mb-main">
+        <div class="menu-btn">
+          <svg
+            onclick="menu.hidden^=1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="size-6"
+            height="24"
+            width="24"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+
+          <div hidden id="menu">
+            <ul class="menu-list">
+              <li>
+                <a  href="./home2.html">Home</a>
+                <i onclick="menu2.hidden^=1" class="fa-solid fa-caret-down"></i>
+                <div id="menu2" hidden>
+                  <a href="../index.html">Home1</a>
+                </div>
+              </li>
+              <li><a href="./about2.html">About</a></li>
+              <li><a  href="./service2.html">Service</a></li>
+              <li><a style="color: #005FC9" href="./blog2.html">Blogs</a></li>
+               <li><a href="./contact2.html">Contact</a></li>
+            <li><a href="./dashboard2.html">Dashboard</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="mb-logo">
+          <a href="./home2.html" style="display: flex; align-items: center">
+            <img src="../images/logo.webp" alt="" />
+          </a>
+          <a class="login2" href="./login2.html"
+            ><i class="fa-solid fa-user"></i>Log in</a
+          >
+        </div>
+      </div>
+    </div>
+    <nav id="nav" >
+      <div class="main-menu">
+        <a href="./home2.html" style="display: flex; align-items: center">
+          <img src="../images/logo.webp" alt="" />
+        </a>
+        <div class="menu-child">
+          <ul class="menu-list2">
+            <div style="position: relative">
+              <li>
+                <a  href="./home2.html">Home</a
+                ><i
+                  onclick="menu3.hidden^=1"
+                  class="fa-solid fa-caret-down"
+                ></i>
+                <div
+                  style="position: absolute; top: 25px; background-color: white"
+                >
+                  <a
+                    href="../index.html"
+                    style="
+                      background-color: white;
+                      border: 1px solid black;
+                      padding: 4px;
+                    "
+                    id="menu3"
+                    hidden
+                    >Home1</a
+                  >
+                </div>
+              </li>
+            </div>
+            <li><a href="./about2.html">About</a></li>
+            <li><a  href="./service2.html">Service</a></li>
+            <li><a style="color: #005FC9" href="./blog2.html">Blogs</a></li>
+            <li><a href="./contact2.html">Contact</a></li>
+            <li><a href="./dashboard2.html">Dashboard</a></li>
+          </ul>
+
+          <a class="login" href="./login2.html"
+            ><i class="fa-solid fa-user"></i>Log in</a
+          >
+        </div>
+      </div>
+    </nav>
+
+
+
+
+    <main class="container">
+  <section class="posts">
+    <!-- Post 1 -->
+    <article id="e1" class="post-card">
+      <div class="post-media">
+        <img src="../images/bg1.webp" alt="Comprehensive Auto" />
+      </div>
+
+      <div class="post-body">
+        <ul class="meta">
+          <li class="meta-item">📅 Oct 10, 2021</li>
+          <li class="meta-item">🏷 Auto Insurance</li>
+          <li class="meta-item">💬 3</li>
+        </ul>
+
+        <h2 class="post-title">Understanding Comprehensive Auto Coverage</h2>
+
+        <p class="excerpt">
+          Comprehensive coverage protects you from non-collision losses such as theft, vandalism, fire and weather damage. Learn when it's worth adding to your policy and how deductibles affect your premium.
+        </p>
+
+        <blockquote class="quote">
+          <p>
+            Comprehensive protection gives peace of mind against a wide range of risks beyond standard collision — essential for many drivers depending on age and vehicle value.
+          </p>
+        </blockquote>
+
+        <p class="more-text">
+          Choosing the right deductible and understanding exclusions helps you balance monthly cost with protection — read on for practical tips and real-world examples.
+        </p>
+      </div>
+    </article>
+
+    <!-- Post 2 -->
+    <article id="e2" class="post-card">
+      <div class="post-media">
+        <img src="../images/bg2.webp" alt="Homeowners Essentials" />
+      </div>
+
+      <div class="post-body">
+        <ul class="meta">
+          <li class="meta-item">📅 Sep 28, 2021</li>
+          <li class="meta-item">🏷 Home Insurance</li>
+          <li class="meta-item">💬 1</li>
+        </ul>
+
+        <h2 class="post-title">Homeowner's Policy Essentials: What It Covers</h2>
+
+        <p class="excerpt">
+          From dwelling protection to personal property and liability, discover the core sections of a homeowners policy and the common add-ons that provide fuller protection for your home.
+        </p>
+
+        <blockquote class="quote">
+          <p>
+            Understanding your policy’s limits and optional endorsements can prevent coverage gaps and give better protection against unexpected losses.
+          </p>
+        </blockquote>
+
+        <p class="more-text">
+          We break down common exclusions, replacement cost vs actual cash value, and when to consider earthquake or flood endorsements.
+        </p>
+      </div>
+    </article>
+
+    <!-- Post 3 -->
+    <article id="e3" class="post-card">
+      <div class="post-media">
+        <img src="../images/bg3.webp" alt="Life Insurance" />
+      </div>
+
+      <div class="post-body">
+        <ul class="meta">
+          <li class="meta-item">📅 Aug 22, 2020</li>
+          <li class="meta-item">🏷 Life Insurance</li>
+          <li class="meta-item">💬 5</li>
+        </ul>
+
+        <h2 class="post-title">Life Insurance: Term vs Permanent — Which to Choose?</h2>
+
+        <p class="excerpt">
+          Term life provides affordable temporary protection, while permanent policies include cash value and lifelong coverage. This article breaks down costs, use-cases and when to choose each option.
+        </p>
+
+        <blockquote class="quote">
+          <p>
+            Selecting between term and permanent life depends on needs, budget and long-term goals — we explain the trade-offs clearly.
+          </p>
+        </blockquote>
+
+        <p class="more-text">
+          Compare premiums, riders, and tax implications to find the policy that fits your family's financial plan.
+        </p>
+      </div>
+    </article>
+
+    <!-- Post 4 -->
+    <article id="e4" class="post-card">
+      <div class="post-media">
+        <img src="../images/bg4.webp" alt="Business Liability" />
+      </div>
+
+      <div class="post-body">
+        <ul class="meta">
+          <li class="meta-item">📅 Jul 14, 2020</li>
+          <li class="meta-item">🏷 Business Insurance</li>
+          <li class="meta-item">💬 2</li>
+        </ul>
+
+        <h2 class="post-title">Business Liability Protection: Small Business Guide</h2>
+
+        <p class="excerpt">General liability, professional liability and product liability cover different risks for businesses. Learn which policies are essential for your operations and how to lower exposure.</p>
+
+        <blockquote class="quote">
+          <p>
+            A layered insurance approach helps protect cash flow, reputation and assets — identifying the right combination of policies is key.
+          </p>
+        </blockquote>
+
+        <p class="more-text">We walk through common claims, limits to consider, and practical steps to reduce liability and insurance costs for small businesses.</p>
+      </div>
+    </article>
+  </section>
+</main>
+
+</body>
+</html>
