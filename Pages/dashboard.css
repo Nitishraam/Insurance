@@ -571,6 +571,12 @@ top-about {
   .logo {
     height: 32px;
   }
+    .heat-card{
+    padding: 5px;
+  }
+ .heat-table{
+  padding: 1px;
+ }
 }
 
 /* ======= IMPORTANT: add meta viewport in your HTML head =======
@@ -579,100 +585,14 @@ top-about {
 
 /* --- Fix missing brace and consolidate mobile rules --- */
 /* (Replace your broken media-query chunk with this consolidated block) */
-@media (max-width: 768px) {
-  /* show mobile nav wrapper, hide desktop nav */
-  nav { display: none; }
-  .mb { display: block; }
-  .mb-main {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 8px;
-    padding: 8px 12px;
-    background: white;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+ @media (max-width: 320px) {
+  .top-about{
+    width: 116vw;
   }
-  .mb-logo img { height: 34px; }
-
-  /* Mobile menu list placed under the mobile bar */
-  .menu-list {
-    position: absolute;
-    top: calc(100% + 8px); /* just under .mb-main */
-    left: 0;
-    right: 0;
-    width: 100%;
-    padding: 12px;
-    background-color: white;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin: 0;
+  .ft-wrap{
+    width: 116vw;
   }
-  .menu-list li { width: 100%; }
-  .menu-list li a {
-    display: block;
-    padding: 10px 14px;
-    font-weight: 600;
-    color: #222;
-  }
-
-  /* fix overlay on small screens so it doesn't overflow */
-  .overlay {
-    position: absolute;
-    top: 40%;
-    left: 5%;
-    right: 5%;
-    transform: translateY(-10%);
-  }
-  .overlay h1 { font-size: 28px; line-height: 1.15; }
-
-  /* avoid large gaps and fixed heights on hero */
-  .top-img { height: auto; min-height: 260px; filter: brightness(55%); }
-
-  /* compact footer layout on small screens */
-  .ft-inner { grid-template-columns: 1fr; gap: 18px; padding: 0 12px; }
-  .contact-card { order: 2; }
-
-  /* small-screen adjustments for other containers */
-  .hero { flex-direction: column; padding: 30px 16px; margin-top: 60px; }
-  .hero-content { text-align: center; margin-top: 18px; }
-
-  /* prevent horizontal overflow from any long element */
-  body, html { overflow-x: hidden; }
-
-  /* optional visual debug helpers (remove after you fix layout) */
-  /* * { outline: 1px dashed rgba(0,0,0,0.04); } */
-}
-
-/* ====== Other responsive breakpoints kept as-is but ensure they come after the 768 rule ===== */
-@media (max-width: 1130px) {
-  .menu-list2 { gap: 40px; }
-}
-@media (max-width: 1000px) {
-  .menu-list2 { gap: 10px; width: 60%; }
-  .mb-main { gap: 2px; }
-}
-@media (max-width: 450px) {
-  .mb-logo img { height: 30px; }
-  .mb-logo a { align-items: center; font-size: 12px; }
-  .mb-logo { gap: 18px; }
-}
-@media (max-width: 320px) {
-  .container{ padding: 1rem; }
-  .blog-section{ padding: 0px; }
-}
-.menu-list { display: none; }
-.menu-list.open { display: flex; }
-
-
-
-
+ }
 
 
 

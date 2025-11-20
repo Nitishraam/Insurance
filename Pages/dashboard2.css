@@ -528,6 +528,7 @@ nav {
     order: 2;
   }
 }
+
 @media (max-width: 520px) {
   .ft-wrap {
     padding: 28px 18px;
@@ -538,8 +539,21 @@ nav {
   .logo {
     height: 32px;
   }
+  .heat-card{
+    padding: 5px;
+  }
+ .heat-table{
+  padding: 1px;
+ }
 }
-
+ @media (max-width: 320px) {
+  .top-about{
+    width: 116vw;
+  }
+  .ft-wrap{
+    width: 116vw;
+  }
+ }
 
 
 /* RESPONSIVE */

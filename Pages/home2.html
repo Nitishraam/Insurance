@@ -304,16 +304,29 @@
 
         <div class="or-pill">OR</div>
 
-        <form class="card email-card" action="#" method="get" onsubmit="return false;">
-          <div class="card-header">
-            <div data-aos="fade-up" class="small">Sign up for emails</div>
-          </div>
+     <form class="card email-card" action="./error.html" method="get" onsubmit="return validateEmail()">
+  <div class="card-header">
+    <div data-aos="fade-up" class="small">Sign up for emails</div>
+  </div>
 
-          <div data-aos="zoom-out" class="email-row">
-            <input data-aos="fade-up" class="email-input" type="email" placeholder="Your Email" required />
-            <a data-aos="fade-up" href="./error.html" class="send-btn" aria-label="Send">➜</a>
-          </div>
-        </form>
+  <div data-aos="zoom-out" class="email-row">
+    <input id="emailInput" data-aos="fade-up" class="email-input" type="email" placeholder="Your Email" required />
+    <button type="submit" data-aos="fade-up" class="send-btn" aria-label="Send">➜</button>
+  </div>
+</form>
+
+<script>
+  function validateEmail() {
+    const email = document.getElementById("emailInput").value.trim();
+
+    if (email === "") {
+      return false; // stop submit if empty
+    }
+
+    // allow form to go to error.html
+    return true;
+  }
+</script>
       </div>
     </div>
   </section>
@@ -400,7 +413,7 @@
           Insurance is purchased to provide financial protection or reimbursement against losses resulting from accidents, injury, or property damage.
         </p>
 
-        <form class="ft-subscribe" action="./Pages/error.html" method="GET" aria-label="Subscribe form">
+        <form class="ft-subscribe" action="./error.html" method="GET" aria-label="Subscribe form">
           <label class="sr-only" for="ft-email">Email Address</label>
           <input id="ft-email" class="ft-input" name="email" type="email" placeholder="Email Address" required>
           <button class="ft-send" type="submit" aria-label="Subscribe">➜</button>
