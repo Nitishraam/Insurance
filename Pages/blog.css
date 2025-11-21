@@ -862,28 +862,7 @@ nav {
     overflow-x: hidden;
   }
 
-  /* Mobile header: make sure it's full width and doesn't cover content */
-  .mb {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-  }
-  /* add safe spacing so page content isn't hidden under fixed header */
-  /* adjust 64px if your mobile header height differs */
-  .site, .container, .container2 {
-    padding-top: 72px !important;
-  }
-
-  .mb-main {
-    padding: 8px 12px !important;
-    gap: 10px !important;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .mb-logo img { height: 34px; }
-
+  
   /* Hero image - prevent 110vw overflow and keep aspect ratio */
   .top-img {
     width: 100% !important;
@@ -952,7 +931,7 @@ nav {
   /* Ensure menu-list (hamburger) fits inside screen */
   .menu-list {
     left: 0 !important;
-    width: calc(100% - 24px) !important;
+ 
     padding: 10px !important;
     box-shadow: 0 6px 18px rgba(0,0,0,0.12);
     border-radius: 8px;
