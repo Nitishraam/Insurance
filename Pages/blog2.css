@@ -46,7 +46,6 @@ nav {
   display: flex;
 }
 
-
 .login2 {
   border: 1px solid black;
   padding: 7px;
@@ -225,7 +224,7 @@ nav {
 }
 .btn {
   display: inline-block;
-    background: linear-gradient(to right, #7bb6f9, #023a7a);
+  background: linear-gradient(to right, #7bb6f9, #023a7a);
 
   color: #fff;
   padding: 10px 14px;
@@ -289,7 +288,7 @@ nav {
   text-decoration: none;
   font-weight: 700;
 }
-.socials a{
+.socials a {
   color: black;
 }
 /* categories */
@@ -446,7 +445,6 @@ nav {
     font-size: 18px;
   }
 }
-
 
 .ft-wrap {
   padding: 64px 40px 28px;
@@ -703,12 +701,6 @@ nav {
     height: 32px;
   }
 }
-
-
-
-
-
-
 
 /* RESPONSIVE */
 @media (max-width: 768px) {

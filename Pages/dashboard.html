@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stackly</title>
-    <link rel="stylesheet" href="../Pages/dashboard.css">
-     <link
+    <link rel="stylesheet" href="../Pages/dashboard.css" />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
       integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
@@ -31,10 +31,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-      <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
-</head>
-<body>
-   <div class="mb">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  </head>
+  <body>
+    <div class="mb">
       <div class="mb-main">
         <div class="menu-btn">
           <svg
@@ -56,7 +56,7 @@
           <div hidden id="menu">
             <ul class="menu-list">
               <li>
-                <a  href="../index.html">Home</a>
+                <a href="../index.html">Home</a>
                 <i onclick="menu2.hidden^=1" class="fa-solid fa-caret-down"></i>
                 <div id="menu2" hidden>
                   <a href="./home2.html">Home2</a>
@@ -65,8 +65,10 @@
               <li><a href="./about.html">About</a></li>
               <li><a href="./service.html">Service</a></li>
               <li><a href="./blog.html">Blogs</a></li>
-               <li><a href="./contact.html">Contact</a></li>
-            <li><a  style="color: #005FC9" href="./dashboard.html">Dashboard</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+              <li>
+                <a style="color: #005fc9" href="./dashboard.html">Dashboard</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -80,7 +82,7 @@
         </div>
       </div>
     </div>
-    <nav id="nav" >
+    <nav id="nav">
       <div class="main-menu">
         <a href="../index.html" style="display: flex; align-items: center">
           <img src="../images/logo.webp" alt="" />
@@ -89,7 +91,7 @@
           <ul class="menu-list2">
             <div style="position: relative">
               <li>
-                <a  href="../index.html">Home</a
+                <a href="../index.html">Home</a
                 ><i
                   onclick="menu3.hidden^=1"
                   class="fa-solid fa-caret-down"
@@ -111,11 +113,13 @@
                 </div>
               </li>
             </div>
-            <li><a  href="./about.html">About</a></li>
+            <li><a href="./about.html">About</a></li>
             <li><a href="./service.html">Service</a></li>
             <li><a href="./blog.html">Blogs</a></li>
             <li><a href="./contact.html">Contact</a></li>
-            <li><a style="color: #005FC9" href="./dashboard.html">Dashboard</a></li>
+            <li>
+              <a style="color: #005fc9" href="./dashboard.html">Dashboard</a>
+            </li>
           </ul>
 
           <a class="login" href="./login.html"
@@ -125,11 +129,7 @@
       </div>
     </nav>
     <div class="top-about">
-      <img
-        class="top-img"
-        src="../images/mi3.webp"
-        alt=""
-      />
+      <img class="top-img" src="../images/mi3.webp" alt="" />
 
       <div data-aos="zoom-in" class="overlay">
         <h1>DASHBOARD</h1>
@@ -137,379 +137,508 @@
           <span class="home-icon">🏠Home / <span>Dashboard</span></span>
         </p>
       </div>
-    </div>  
+    </div>
 
-
- 
-  <div class="dashboard">
-
-    <!-- LEFT SIDEBAR -->
-    <aside class="sidebar">
-      <div class="year-select">
-        <label for="year">Year</label>
-        <select id="year">
-          <option>2022</option>
-          <option>2023</option>
-          <option>2024</option>
-          <option selected>2025</option>
-        </select>
-      </div>
-
-      <div class="kpis">
-        <div class="kpi">
-          <div class="kpi-label">Policies Sold</div>
-          <div class="kpi-value" id="kpi-sold">26</div>
-        </div>
-        <div class="kpi">
-          <div class="kpi-label">Assured Amount</div>
-          <div class="kpi-value" id="kpi-assured">$4.92M</div>
-        </div>
-        <div class="kpi">
-          <div class="kpi-label">Avg. Premium</div>
-          <div class="kpi-value" id="kpi-average">$105.06K</div>
-        </div>
-        <div class="kpi">
-          <div class="kpi-label">Total Premium</div>
-          <div class="kpi-value" id="kpi-total">$3.82M</div>
-        </div>
-        <div class="kpi">
-          <div class="kpi-label">Avg. Claim Process</div>
-          <div class="kpi-value" id="kpi-claim">6 Day(s)</div>
-        </div>
-      </div>
-    </aside>
-
-    <!-- MAIN PANELS -->
-    <main class="main">
-
-      <!-- TOP CHART ROW -->
-      <section class="charts-row">
-        <div class="card donut-card">
-          <h3>Assured Amount by Policy Type</h3>
-          <canvas id="donutChart" width="400" height="300"></canvas>
-          <div class="legend" id="donutLegend"></div>
+    <div class="dashboard">
+      <!-- LEFT SIDEBAR -->
+      <aside class="sidebar">
+        <div class="year-select">
+          <label for="year">Year</label>
+          <select id="year">
+            <option>2022</option>
+            <option>2023</option>
+            <option>2024</option>
+            <option selected>2025</option>
+          </select>
         </div>
 
-        <div class="card bar-card">
-          <h3>Profit vs. Expenses by Policy Type</h3>
-          <canvas id="barChart" width="600" height="300"></canvas>
+        <div class="kpis">
+          <div class="kpi">
+            <div class="kpi-label">Policies Sold</div>
+            <div class="kpi-value" id="kpi-sold">26</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-label">Assured Amount</div>
+            <div class="kpi-value" id="kpi-assured">$4.92M</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-label">Avg. Premium</div>
+            <div class="kpi-value" id="kpi-average">$105.06K</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-label">Total Premium</div>
+            <div class="kpi-value" id="kpi-total">$3.82M</div>
+          </div>
+          <div class="kpi">
+            <div class="kpi-label">Avg. Claim Process</div>
+            <div class="kpi-value" id="kpi-claim">6 Day(s)</div>
+          </div>
         </div>
-      </section>
+      </aside>
 
-      <!-- HEAT / APE ROW -->
-      <section class="card heat-card">
-        <h3>Annual Premium Equivalent Performance (APE) by Year and Policy Type</h3>
-        <div class="heat-table" id="heatTable" aria-live="polite"></div>
-      </section>
+      <!-- MAIN PANELS -->
+      <main class="main">
+        <!-- TOP CHART ROW -->
+        <section class="charts-row">
+          <div class="card donut-card">
+            <h3>Assured Amount by Policy Type</h3>
+            <canvas id="donutChart" width="400" height="300"></canvas>
+            <div class="legend" id="donutLegend"></div>
+          </div>
 
-    </main>
-  </div>
+          <div class="card bar-card">
+            <h3>Profit vs. Expenses by Policy Type</h3>
+            <canvas id="barChart" width="600" height="300"></canvas>
+          </div>
+        </section>
 
-<script>
-  // Demo dashboard script using Chart.js
-// Data is simulated. Changing the year updates charts + heat table + KPIs.
+        <!-- HEAT / APE ROW -->
+        <section class="card heat-card">
+          <h3>
+            Annual Premium Equivalent Performance (APE) by Year and Policy Type
+          </h3>
+          <div class="heat-table" id="heatTable" aria-live="polite"></div>
+        </section>
+      </main>
+    </div>
 
-const dataByYear = {
-  2022: {
-    assured: { Travel: 2828000, Health: 2400000, Life: 2880000, Home: 2640000, Disability: 260000 },
-    profit: { Home: 8000, Disability: 1200, Health: 12000, Travel: 16000, Life: 15000 },
-    expense: { Home: 2000, Disability: 300, Health: 3000, Travel: 4800, Life: 4000 },
-    ape: {
-      Travel: ["$16.69K","$3.85K","$12.26K","$46.61K"],
-      Life:   ["$22.88K","$58.86K","$11.20K","$12.47K"],
-      Home:   ["$1.31K","$53.62K","$112.10K","$48.88K"],
-      Health: ["$3.63K","$4.36K","$59.22K","$69.13K"],
-      Disability:["$1.50K","$60.38K","$41.30K","$43.65K"],
-      years: [2022,2023,2024,2025]
-    },
-    kpis: { sold:26, assured:"$4.92M", avg:"$105.06K", total:"$3.82M", claim:"6 Day(s)"}
-  },
+    <script>
+      // Demo dashboard script using Chart.js
+      // Data is simulated. Changing the year updates charts + heat table + KPIs.
 
-  2023: {
-    assured: { Travel: 3000000, Health: 2100000, Life: 2550000, Home: 2200000, Disability: 500000 },
-    profit: { Home: 500, Disability: 800, Health: 9000, Travel: 13000, Life: 14000 },
-    expense: { Home: 1200, Disability: 250, Health: 2000, Travel: 3500, Life: 3500 },
-    ape: {/* same structure used for demo */},
-    kpis: { sold:34, assured:"$5.10M", avg:"$110.00K", total:"$4.1M", claim:"5 Day(s)"}
-  },
+      const dataByYear = {
+        2022: {
+          assured: {
+            Travel: 2828000,
+            Health: 2400000,
+            Life: 2880000,
+            Home: 2640000,
+            Disability: 260000,
+          },
+          profit: {
+            Home: 8000,
+            Disability: 1200,
+            Health: 12000,
+            Travel: 16000,
+            Life: 15000,
+          },
+          expense: {
+            Home: 2000,
+            Disability: 300,
+            Health: 3000,
+            Travel: 4800,
+            Life: 4000,
+          },
+          ape: {
+            Travel: ["$16.69K", "$3.85K", "$12.26K", "$46.61K"],
+            Life: ["$22.88K", "$58.86K", "$11.20K", "$12.47K"],
+            Home: ["$1.31K", "$53.62K", "$112.10K", "$48.88K"],
+            Health: ["$3.63K", "$4.36K", "$59.22K", "$69.13K"],
+            Disability: ["$1.50K", "$60.38K", "$41.30K", "$43.65K"],
+            years: [2022, 2023, 2024, 2025],
+          },
+          kpis: {
+            sold: 26,
+            assured: "$4.92M",
+            avg: "$105.06K",
+            total: "$3.82M",
+            claim: "6 Day(s)",
+          },
+        },
 
-  2024: {
-    assured: { Travel: 2828000, Health: 2400000, Life: 2880000, Home: 2640000, Disability: 260000 },
-    profit: { Home: 12000, Disability: 600, Health: 12500, Travel: 16000, Life: 17000 },
-    expense: { Home: 2500, Disability: 900, Health: 3100, Travel: 4800, Life: 4500 },
-    ape: {/* same */},
-    kpis: { sold:46, assured:"$6.02M", avg:"$118.00K", total:"$4.9M", claim:"4 Day(s)"}
-  },
+        2023: {
+          assured: {
+            Travel: 3000000,
+            Health: 2100000,
+            Life: 2550000,
+            Home: 2200000,
+            Disability: 500000,
+          },
+          profit: {
+            Home: 500,
+            Disability: 800,
+            Health: 9000,
+            Travel: 13000,
+            Life: 14000,
+          },
+          expense: {
+            Home: 1200,
+            Disability: 250,
+            Health: 2000,
+            Travel: 3500,
+            Life: 3500,
+          },
+          ape: {
+            /* same structure used for demo */
+          },
+          kpis: {
+            sold: 34,
+            assured: "$5.10M",
+            avg: "$110.00K",
+            total: "$4.1M",
+            claim: "5 Day(s)",
+          },
+        },
 
-  2025: {
-    assured: { Travel: 4661000, Health: 6913000, Life: 4888000, Home: 1121000, Disability: 603800 },
-    profit: { Home: 15000, Disability: 2200, Health: 12500, Travel: 17000, Life: 15000 },
-    expense: { Home: 3500, Disability: 4300, Health: 4900, Travel: 5300, Life: 4200 },
-    ape: {/* same */},
-    kpis: { sold:72, assured:"$9.20M", avg:"$134.00K", total:"$7.2M", claim:"3 Day(s)"}
-  }
-};
+        2024: {
+          assured: {
+            Travel: 2828000,
+            Health: 2400000,
+            Life: 2880000,
+            Home: 2640000,
+            Disability: 260000,
+          },
+          profit: {
+            Home: 12000,
+            Disability: 600,
+            Health: 12500,
+            Travel: 16000,
+            Life: 17000,
+          },
+          expense: {
+            Home: 2500,
+            Disability: 900,
+            Health: 3100,
+            Travel: 4800,
+            Life: 4500,
+          },
+          ape: {
+            /* same */
+          },
+          kpis: {
+            sold: 46,
+            assured: "$6.02M",
+            avg: "$118.00K",
+            total: "$4.9M",
+            claim: "4 Day(s)",
+          },
+        },
 
-// fallback for missing "ape" data - use same sample arrays from 2020
-dataByYear[2022].ape = dataByYear[2022].ape || {};
-dataByYear[2023].ape = dataByYear[2023].ape || dataByYear[2023].ape;
-dataByYear[2024].ape = dataByYear[2024].ape || dataByYear[2024].ape;
-dataByYear[2025].ape = dataByYear[2025].ape || dataByYear[2025].ape;
+        2025: {
+          assured: {
+            Travel: 4661000,
+            Health: 6913000,
+            Life: 4888000,
+            Home: 1121000,
+            Disability: 603800,
+          },
+          profit: {
+            Home: 15000,
+            Disability: 2200,
+            Health: 12500,
+            Travel: 17000,
+            Life: 15000,
+          },
+          expense: {
+            Home: 3500,
+            Disability: 4300,
+            Health: 4900,
+            Travel: 5300,
+            Life: 4200,
+          },
+          ape: {
+            /* same */
+          },
+          kpis: {
+            sold: 72,
+            assured: "$9.20M",
+            avg: "$134.00K",
+            total: "$7.2M",
+            claim: "3 Day(s)",
+          },
+        },
+      };
 
-const policyTypes = ["Home","Disability","Health","Travel","Life"];
-const donutEl = document.getElementById('donutChart').getContext('2d');
-const barEl = document.getElementById('barChart').getContext('2d');
+      // fallback for missing "ape" data - use same sample arrays from 2020
+      dataByYear[2022].ape = dataByYear[2022].ape || {};
+      dataByYear[2023].ape = dataByYear[2023].ape || dataByYear[2023].ape;
+      dataByYear[2024].ape = dataByYear[2024].ape || dataByYear[2024].ape;
+      dataByYear[2025].ape = dataByYear[2025].ape || dataByYear[2025].ape;
 
-let donutChart = new Chart(donutEl, {
-  type: 'doughnut',
-  data: {
-    labels: policyTypes,
-    datasets: [{
-      data: policyTypes.map(pt => dataByYear[2025].assured[pt] || 0),
-      backgroundColor: ['#F4B942','#D9889C','#4AA3FF','#7FC8FF','#7C6CFF'],
-      hoverOffset: 6,
-      borderColor: '#fff',
-      borderWidth: 2
-    }]
-  },
-  options: {
-    plugins:{legend:{display:false}},
-    cutout: '60%'
-  }
-});
+      const policyTypes = ["Home", "Disability", "Health", "Travel", "Life"];
+      const donutEl = document.getElementById("donutChart").getContext("2d");
+      const barEl = document.getElementById("barChart").getContext("2d");
 
-let barChart = new Chart(barEl, {
-  type: 'bar',
-  data: {
-    labels: policyTypes,
-    datasets: [
-      { label: 'Profit', data: policyTypes.map(pt => dataByYear[2025].profit[pt] || 0), backgroundColor: '#0b66c3' },
-      { label: 'Expense', data: policyTypes.map(pt => dataByYear[2025].expense[pt] || 0), backgroundColor: '#f2b01e' }
-    ]
-  },
-  options: {
-    responsive:true,
-    plugins:{legend:{position:'top'}},
-    scales:{
-      y:{beginAtZero:true}
-    }
-  }
-});
+      let donutChart = new Chart(donutEl, {
+        type: "doughnut",
+        data: {
+          labels: policyTypes,
+          datasets: [
+            {
+              data: policyTypes.map((pt) => dataByYear[2025].assured[pt] || 0),
+              backgroundColor: [
+                "#F4B942",
+                "#D9889C",
+                "#4AA3FF",
+                "#7FC8FF",
+                "#7C6CFF",
+              ],
+              hoverOffset: 6,
+              borderColor: "#fff",
+              borderWidth: 2,
+            },
+          ],
+        },
+        options: {
+          plugins: { legend: { display: false } },
+          cutout: "60%",
+        },
+      });
 
-// populate donut legend
-function renderDonutLegend(chart){
-  const legend = document.getElementById('donutLegend');
-  legend.innerHTML = '';
-  chart.data.labels.forEach((l,i)=>{
-    const col = chart.data.datasets[0].backgroundColor[i];
-    const el = document.createElement('div');
-    el.className = 'item';
-    el.innerHTML = `<span style="width:12px;height:12px;background:${col};display:inline-block;border-radius:3px"></span><span style="margin-left:8px">${l}</span>`;
-    legend.appendChild(el);
-  });
-}
-renderDonutLegend(donutChart);
+      let barChart = new Chart(barEl, {
+        type: "bar",
+        data: {
+          labels: policyTypes,
+          datasets: [
+            {
+              label: "Profit",
+              data: policyTypes.map((pt) => dataByYear[2025].profit[pt] || 0),
+              backgroundColor: "#0b66c3",
+            },
+            {
+              label: "Expense",
+              data: policyTypes.map((pt) => dataByYear[2025].expense[pt] || 0),
+              backgroundColor: "#f2b01e",
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+          plugins: { legend: { position: "top" } },
+          scales: {
+            y: { beginAtZero: true },
+          },
+        },
+      });
 
-// heat table renderer
-function renderHeatTable(yearData){
-  const container = document.getElementById('heatTable');
-  container.innerHTML = '';
-  const years = yearData.ape.years || [2022,2023,2024,2024];
-  // header row: blank + years
-  container.appendChild(cell('','head'));
-  years.forEach(y => container.appendChild(cell(y,'head')));
+      // populate donut legend
+      function renderDonutLegend(chart) {
+        const legend = document.getElementById("donutLegend");
+        legend.innerHTML = "";
+        chart.data.labels.forEach((l, i) => {
+          const col = chart.data.datasets[0].backgroundColor[i];
+          const el = document.createElement("div");
+          el.className = "item";
+          el.innerHTML = `<span style="width:12px;height:12px;background:${col};display:inline-block;border-radius:3px"></span><span style="margin-left:8px">${l}</span>`;
+          legend.appendChild(el);
+        });
+      }
+      renderDonutLegend(donutChart);
 
-  // each policy row
-  const types = ["Travel","Life","Home","Health","Disability"];
-  types.forEach(type=>{
-    container.appendChild(cell(type,'head'));
-    // find array of values for this type
-    const arr = (yearData.ape[type] && yearData.ape[type]) || (dataByYear[2022].ape[type] || []);
-    years.forEach((y,idx)=>{
-      const raw = arr[idx] || "$0";
-      // create a simple numeric value for coloring (strip $ and K)
-      const n = parseFloat(raw.replace(/[\$,K]/g,'')) || 0;
-      const color = heatColor(n); // compute color
-      const cellEl = cell(raw,'value');
-      cellEl.style.background = color;
-      container.appendChild(cellEl);
-    });
-  });
+      // heat table renderer
+      function renderHeatTable(yearData) {
+        const container = document.getElementById("heatTable");
+        container.innerHTML = "";
+        const years = yearData.ape.years || [2022, 2023, 2024, 2024];
+        // header row: blank + years
+        container.appendChild(cell("", "head"));
+        years.forEach((y) => container.appendChild(cell(y, "head")));
 
-  // helper to create cell
-  function cell(text, cl){
-    const d = document.createElement('div');
-    d.className = 'cell ' + cl;
-    d.textContent = text;
-    return d;
-  }
+        // each policy row
+        const types = ["Travel", "Life", "Home", "Health", "Disability"];
+        types.forEach((type) => {
+          container.appendChild(cell(type, "head"));
+          // find array of values for this type
+          const arr =
+            (yearData.ape[type] && yearData.ape[type]) ||
+            dataByYear[2022].ape[type] ||
+            [];
+          years.forEach((y, idx) => {
+            const raw = arr[idx] || "$0";
+            // create a simple numeric value for coloring (strip $ and K)
+            const n = parseFloat(raw.replace(/[\$,K]/g, "")) || 0;
+            const color = heatColor(n); // compute color
+            const cellEl = cell(raw, "value");
+            cellEl.style.background = color;
+            container.appendChild(cellEl);
+          });
+        });
 
-  // simple color ramp from light-blue to deep-blue
-  function heatColor(value){
-    // value roughly 0..120 scale - clamp & map
-    const v = Math.min(120, Math.max(0, value));
-    // map to 0..1
-    const t = v/120;
-    const r = Math.round(230 - (100 * t));
-    const g = Math.round(245 - (160 * t));
-    const b = Math.round(250 - (120 * t));
-    return `rgb(${r},${g},${b})`;
-  }
-}
+        // helper to create cell
+        function cell(text, cl) {
+          const d = document.createElement("div");
+          d.className = "cell " + cl;
+          d.textContent = text;
+          return d;
+        }
 
-// update KPIs
-function updateKPIs(kpis){
-  document.getElementById('kpi-sold').textContent = kpis.sold;
-  document.getElementById('kpi-assured').textContent = kpis.assured;
-  document.getElementById('kpi-average').textContent = kpis.avg;
-  document.getElementById('kpi-total').textContent = kpis.total;
-  document.getElementById('kpi-claim').textContent = kpis.claim;
-}
+        // simple color ramp from light-blue to deep-blue
+        function heatColor(value) {
+          // value roughly 0..120 scale - clamp & map
+          const v = Math.min(120, Math.max(0, value));
+          // map to 0..1
+          const t = v / 120;
+          const r = Math.round(230 - 100 * t);
+          const g = Math.round(245 - 160 * t);
+          const b = Math.round(250 - 120 * t);
+          return `rgb(${r},${g},${b})`;
+        }
+      }
 
-// update charts on year change
-function updateForYear(year){
-  const y = parseInt(year,10);
-  const d = dataByYear[y];
-  if(!d) return;
-  // donut
-  donutChart.data.datasets[0].data = policyTypes.map(pt => d.assured[pt] || 0);
-  donutChart.update();
+      // update KPIs
+      function updateKPIs(kpis) {
+        document.getElementById("kpi-sold").textContent = kpis.sold;
+        document.getElementById("kpi-assured").textContent = kpis.assured;
+        document.getElementById("kpi-average").textContent = kpis.avg;
+        document.getElementById("kpi-total").textContent = kpis.total;
+        document.getElementById("kpi-claim").textContent = kpis.claim;
+      }
 
-  // bar
-  barChart.data.datasets[0].data = policyTypes.map(pt => d.profit[pt] || 0);
-  barChart.data.datasets[1].data = policyTypes.map(pt => d.expense[pt] || 0);
-  barChart.update();
+      // update charts on year change
+      function updateForYear(year) {
+        const y = parseInt(year, 10);
+        const d = dataByYear[y];
+        if (!d) return;
+        // donut
+        donutChart.data.datasets[0].data = policyTypes.map(
+          (pt) => d.assured[pt] || 0
+        );
+        donutChart.update();
 
-  // heat table - use combined data object (we will show 2020 sample values for all)
-  renderHeatTable(dataByYear[2022]); // in demo use 2020 APE arrays
-  updateKPIs(d.kpis);
-}
+        // bar
+        barChart.data.datasets[0].data = policyTypes.map(
+          (pt) => d.profit[pt] || 0
+        );
+        barChart.data.datasets[1].data = policyTypes.map(
+          (pt) => d.expense[pt] || 0
+        );
+        barChart.update();
 
-// hookup year select
-document.getElementById('year').addEventListener('change', (e)=> updateForYear(e.target.value));
+        // heat table - use combined data object (we will show 2020 sample values for all)
+        renderHeatTable(dataByYear[2022]); // in demo use 2020 APE arrays
+        updateKPIs(d.kpis);
+      }
 
-// initial render
-updateForYear(document.getElementById('year').value);
+      // hookup year select
+      document
+        .getElementById("year")
+        .addEventListener("change", (e) => updateForYear(e.target.value));
 
-</script>
+      // initial render
+      updateForYear(document.getElementById("year").value);
+    </script>
 
- <footer data-aos="zoom-out" class="ft-wrap" role="contentinfo">
-    <div class="ft-inner">
+    <footer data-aos="zoom-out" class="ft-wrap" role="contentinfo">
+      <div class="ft-inner">
+        <!-- About / Subscribe -->
+        <div class="ft-col ft-about">
+          <h3 class="ft-title">About</h3>
+          <p class="ft-text">
+            Insurance is purchased to provide financial protection or
+            reimbursement against losses resulting from accidents, injury, or
+            property damage.
+          </p>
 
-      <!-- About / Subscribe -->
-      <div class="ft-col ft-about">
-        <h3 class="ft-title">About</h3>
-        <p class="ft-text">
-          Insurance is purchased to provide financial protection or reimbursement against losses resulting from accidents, injury, or property damage.
-        </p>
+          <form
+            class="ft-subscribe"
+            action="./Pages/error.html"
+            method="GET"
+            aria-label="Subscribe form"
+          >
+            <label class="sr-only" for="ft-email">Email Address</label>
+            <input
+              id="ft-email"
+              class="ft-input"
+              name="email"
+              type="email"
+              placeholder="Email Address"
+              required
+            />
+            <button class="ft-send" type="submit" aria-label="Subscribe">
+              ➜
+            </button>
+          </form>
 
-        <form class="ft-subscribe" action="./Pages/error.html" method="GET" aria-label="Subscribe form">
-          <label class="sr-only" for="ft-email">Email Address</label>
-          <input id="ft-email" class="ft-input" name="email" type="email" placeholder="Email Address" required>
-          <button class="ft-send" type="submit" aria-label="Subscribe">➜</button>
-        </form>
-
-        <div class="ft-social">
-          <a href="./error.html" class="s"> <i class="fa-brands fa-instagram"></i></a>
-          <a href="./error.html" class="s"> <i class="fa-brands fa-facebook"></i></a>
-          <a href="./error.html" class="s"> <i class="fa-brands fa-twitter"></i></a>
-          <a href="./error.html" class="s"> <i class="fa-brands fa-telegram"></i></a>
+          <div class="ft-social">
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-facebook"></i
+            ></a>
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="./error.html" class="s">
+              <i class="fa-brands fa-telegram"></i
+            ></a>
+          </div>
         </div>
-      </div>
 
-      <!-- Middle contact card -->
-      <div class="ft-col ft-contact">
-        <div class="contact-card">
-         
-
-          <div class="contact-items">
-            <div class="ci">
-              <span class="ci-icon">🌐</span>
-              <div class="ci-text">
-                <div class="ci-line">stackly@gmail.com</div>
-                <div class="ci-sub">www.stackly.com</div>
+        <!-- Middle contact card -->
+        <div class="ft-col ft-contact">
+          <div class="contact-card">
+            <div class="contact-items">
+              <div class="ci">
+                <span class="ci-icon">🌐</span>
+                <div class="ci-text">
+                  <div class="ci-line">stackly@gmail.com</div>
+                  <div class="ci-sub">www.stackly.com</div>
+                </div>
               </div>
-            </div>
 
-            <div class="ci">
-              <span class="ci-icon">📍</span>
-              <div class="ci-text">
-                <div class="ci-line">Chinna Thirupathi,Salem</div>
-                <div class="ci-sub">Tamilnadu,India.</div>
+              <div class="ci">
+                <span class="ci-icon">📍</span>
+                <div class="ci-text">
+                  <div class="ci-line">Chinna Thirupathi,Salem</div>
+                  <div class="ci-sub">Tamilnadu,India.</div>
+                </div>
               </div>
-            </div>
 
-            <hr class="ci-divider">
+              <hr class="ci-divider" />
 
-            <div class="ci phone">
-              <span class="ci-icon circle">📞</span>
-              <div class="ci-text">
-                <div class="ci-label">Emergency call</div>
-                <div class="ci-phone">+91 78912 24567</div>
+              <div class="ci phone">
+                <span class="ci-icon circle">📞</span>
+                <div class="ci-text">
+                  <div class="ci-label">Emergency call</div>
+                  <div class="ci-phone">+91 78912 24567</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+        <!-- Right column: Explore links + Map (replaced gallery) -->
+        <div class="ft-col ft-right">
+          <h3 class="ft-title">Quick Links</h3>
+          <ul class="ft-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./service.html">Service</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./dashboard.html">Dashboard</a></li>
+          </ul>
+        </div>
       </div>
-
-      <!-- Right column: Explore links + Map (replaced gallery) -->
-      <div class="ft-col ft-right">
-        <h3 class="ft-title">Quick Links</h3>
-        <ul class="ft-links">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./service.html">Service</a></li>
-          <li><a href="./blog.html">Blog</a></li>
-          <li><a href="./contact.html">Contact</a></li>
-          <li><a href="./dashboard.html">Dashboard</a></li>
-        </ul>
-
-        
-      </div>
-    
-
-    </div>
       <div class="ft-map" aria-hidden="false">
-          <!-- Replace the src with the map/location you want.
+        <!-- Replace the src with the map/location you want.
                This is an embeddable Google Maps example for New York.
                If you prefer another provider, replace the iframe accordingly. -->
-           <iframe class="map1"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
-              width="100%"
-              height="150"
-              style="border: 0,"
-              allowfullscreen=""
-              loading="lazy"
-              
-            >
-            </iframe>
-        </div>
+        <iframe
+          class="map1"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3907.1616097152896!2d78.1739798!3d11.682956599999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babefef7fd970bb%3A0xe11aef1a71994f9!2sStackly!5e0!3m2!1sen!2sin!4v1757488188623!5m2!1sen!2sin"
+          width="100%"
+          height="150"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        >
+        </iframe>
+      </div>
 
-    <!-- COPYRIGHT ROW -->
-    <div class="ft-copy">
-      © 2025 All rights reserved.
-    </div>
-  </footer>
-  
+      <!-- COPYRIGHT ROW -->
+      <div class="ft-copy">© 2025 All rights reserved.</div>
+    </footer>
 
-
-
-
-
-
-      <script>
-        // $(document).on('ready', function () {
-        // initialization of aos
-        AOS.init({
-          duration: 650,
-          once: false,
-          mirror: true,
-        });
-      </script>
-
-
-
-
-
-</body>
+    <script>
+      // $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+        once: false,
+        mirror: true,
+      });
+    </script>
+  </body>
 </html>

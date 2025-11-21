@@ -443,7 +443,6 @@ nav {
   }
 }
 
-
 .ft-wrap {
   padding: 64px 40px 28px;
   background: linear-gradient(
@@ -699,20 +698,6 @@ nav {
     height: 32px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* RESPONSIVE */
 @media (max-width: 768px) {

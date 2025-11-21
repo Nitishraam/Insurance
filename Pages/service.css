@@ -309,7 +309,7 @@ nav {
   align-items: center;
   gap: 10px;
   padding: 16px 28px;
-   background: linear-gradient(to right, #7bb6f9, #023a7a);
+  background: linear-gradient(to right, #7bb6f9, #023a7a);
   color: black;
   font-weight: 700;
   text-decoration: none;
@@ -389,9 +389,9 @@ nav {
   min-height: 120px;
   background: transparent;
 }
-.type-card:hover{
-    background: linear-gradient(to right, #7bb6f9, #8f97a1);
-    color: white;
+.type-card:hover {
+  background: linear-gradient(to right, #7bb6f9, #8f97a1);
+  color: white;
 }
 
 /* left icon block */
