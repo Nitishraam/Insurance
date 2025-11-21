@@ -697,6 +697,15 @@ nav {
   .logo {
     height: 32px;
   }
+  .top-img{
+    width: 473px;
+  }
+  .ft-wrap{
+    width: 473px;
+  }
+  .container{
+    width: 450px;
+  }
 }
 
 /* RESPONSIVE */
@@ -784,6 +793,12 @@ nav {
     .blog-section {
       padding: 0px;
     }
+     .top-img{
+    width: 520px;
+  }
+  .ft-wrap{
+    width: 520px;
+  }
   }
 
   @media (max-width: 768px) {
