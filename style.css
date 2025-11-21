@@ -1494,9 +1494,9 @@ swiper-slide img {
   }
 }
 @media (max-width: 520px) {
-  .ft-wrap {
+  /* .ft-wrap {
     padding: 28px 18px;
-  }
+  } */
   .ft-inner {
     gap: 12px;
   }
