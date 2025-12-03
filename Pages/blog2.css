@@ -700,7 +700,6 @@ nav {
   .logo {
     height: 32px;
   }
-
 }
 
 /* RESPONSIVE */
@@ -843,4 +842,15 @@ nav {
       flex: 1 1 125px;
     }
   }
+}
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Make all images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }

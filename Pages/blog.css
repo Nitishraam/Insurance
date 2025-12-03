@@ -443,7 +443,6 @@ nav {
   }
 }
 
-
 .ft-wrap {
   padding: 64px 40px 28px;
   background: linear-gradient(
@@ -698,27 +697,13 @@ nav {
   .logo {
     height: 32px;
   }
-  .top-img{
+  .top-img {
     width: 110vw;
   }
-  .ft-wrap{
+  .ft-wrap {
     width: 110vw;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
@@ -852,22 +837,21 @@ nav {
     .trend-text {
       display: none;
     }
-
   }
 }
 /* ===== Mobile fixes overrides - place at end of CSS ===== */
 @media (max-width: 768px) {
   /* prevent horizontal overflow */
-  html, body {
+  html,
+  body {
     overflow-x: hidden;
   }
 
-  
   /* Hero image - prevent 110vw overflow and keep aspect ratio */
   .top-img {
     width: 100% !important;
     max-width: 100%;
-    height: 220px;               /* reduce height on small screens */
+    height: 220px; /* reduce height on small screens */
     object-fit: cover;
     filter: brightness(50%);
     display: block;
@@ -883,18 +867,26 @@ nav {
     text-align: center;
     width: calc(100% - 36px);
   }
-  .overlay h1 { font-size: 36px; line-height: 1.05; }
-  .overlay .breadcrumb { font-size: 14px; }
+  .overlay h1 {
+    font-size: 36px;
+    line-height: 1.05;
+  }
+  .overlay .breadcrumb {
+    font-size: 14px;
+  }
 
   /* Prevent footer & ft-wrap from overflowing */
-  .ft-wrap, .top-img, .map1 {
+  .ft-wrap,
+  .top-img,
+  .map1 {
     width: 100% !important;
     max-width: 100% !important;
     overflow: hidden;
   }
 
   /* Post card image responsiveness */
-  .post-img, .post-image {
+  .post-img,
+  .post-image {
     width: 100% !important;
     height: auto !important;
     display: block;
@@ -931,20 +923,43 @@ nav {
   /* Ensure menu-list (hamburger) fits inside screen */
   .menu-list {
     left: 0 !important;
- 
+
     padding: 10px !important;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
     border-radius: 8px;
   }
 
   /* Button and text size adjustments */
-  .post-title { font-size: 18px !important; }
-  .btn { padding: 10px 14px; font-size: 14px; }
+  .post-title {
+    font-size: 18px !important;
+  }
+  .btn {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
 
   /* small layout tweaks for very small screens */
   @media (max-width: 360px) {
-    .top-img { height: 180px; }
-    .overlay h1 { font-size: 28px; }
-    .site, .container { padding-top: 64px !important; }
+    .top-img {
+      height: 180px;
+    }
+    .overlay h1 {
+      font-size: 28px;
+    }
+    .site,
+    .container {
+      padding-top: 64px !important;
+    }
   }
+}
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* Make all images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
